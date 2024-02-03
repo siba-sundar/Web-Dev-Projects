@@ -1,0 +1,514 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content:flex-start;
+}
+
+#navbar .logo{
+    padding-left: 70px;
+    font-size: 150%;
+}
+
+#navbar .options{
+    padding-left: 12%;
+    display: flex;
+    gap: 20px;
+}
+
+
+#navbar .options a{
+    font-size:90% ;
+    font-weight: bold;
+}
+
+
+#navbar .buttons{
+    padding-left:9%;
+    display: flex;
+    gap:30px;
+}
+
+
+#navbar .signIn{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    border: 2px solid white;
+    font-size: 100%;
+    transition: 0.3s;
+}
+
+#navbar .getStrated{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    font-size: 100%;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+#navbar .options a:hover{
+    color: rgb(92, 92, 232);
+}
+
+#navbar .signIn:hover{
+    transition-delay: 100ms;
+    background-color: white;
+    color: rgb(92, 92, 232);
+}
+
+
+#navbar2{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#navbar2 .options{
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+    padding-left: 70px;
+    font-weight: bold;
+}
+
+#navbar2 .options:hover{
+    border-color:blue;
+}
+
+#navbar2 a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(132, 132, 132);
+    transition: 0.3s;
+}
+
+#navbar2 a:hover{
+    color: black;
+}
+
+#navbar2 a::after{
+    content: "";
+    position:absolute;
+    background-color: blue;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+#navbar2 a:hover::after{
+    width: 100%;
+}
+
+#navbar2 .search{
+    display: flex;
+    padding-left: 270px;
+    gap: 10px;
+}
+#navbar2 .searchImg{
+    height: 40px;
+    width: 40px;
+}
+#navbar2 .searchbar{
+   border: 0cap;
+   font-size: medium;
+}
+
+#heading{
+    width: 100%;
+    height: 270px;
+    display: grid;
+    grid-template-columns: 5% 62% 33%;
+    overflow: hidden;
+}
+
+#heading p{
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+#heading span{
+    display: flex;
+    padding-top: 20px;
+    gap:20px;
+}
+
+#heading h6{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+#page{
+    display: grid;
+    grid-template-columns: 5% 62% 33%;
+}
+#page .rigth{
+    margin-top: -116px;
+}
+
+
+
+#page .icons{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 4.5%;
+    margin-top: -116px;
+    height: 170px;
+    border: 1px solid rgb(184, 182, 182);
+    background-color: #F4F6F9;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;   
+}
+
+#page .icons img{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+#page .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#page .icons a:hover{
+    background-color: #71aceb;
+}
+
+
+
+#page .center{
+    line-height: 30px;
+}
+
+#page .center img {
+    width: 100%;
+}
+
+#page .center .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    color:white;
+    width:100%;
+    height:500px;
+    background-image:linear-gradient(to bottom left,#7833AA ,black,#003870);
+    border-radius: 20px;
+}
+
+
+#page .center .contact .head{
+    display: flex;
+    align-items: center;
+    font-size: 300%;
+    padding: 15px;
+    line-height: 20px;
+    justify-content: center;
+}
+
+#page .center .contact .mid{
+    padding-left: 20px;
+    font-size: 120%;
+    margin-top: 40px;
+}
+
+
+#page .center .contact input{
+    width:80%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding-left: 20px;
+}
+
+#page .center .contact button{
+    width:80%;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: rgb(110, 110, 228);
+}
+
+
+#page .center .related{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#page .center iframe{
+    width: 450px;
+    height: 250px;
+    border-radius:5px ;
+}
+
+#page .center .hosting{
+    background-color: #EBF5FE;
+    width: 100%;
+    height: 350px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+
+#page .center .hosting .content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 70px;
+}
+
+#page .center .hosting .content .head{
+    font-size: 200%;
+}
+
+#page .center .hosting .content .txt{
+    font-size: 117%;
+    padding-top: 30px;
+}
+
+#page .center .hosting .content a{
+    color: white;
+    font-size: 120%;
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #0067D3;
+    height: 50px;
+}
+
+#page .center .hosting .image{
+    background-color:#EBF5FE;
+    background-image: url("asset/CTA-shared.png");
+    background-repeat: no-repeat;
+    background-position: 20% 50%;
+    background-size: 70%;
+}
+
+#page .center .about{
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+#page .center .about .img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:25px;
+    margin-left: 30px;
+    height: 60%;
+    width: 60%;
+}
+
+#page .center .about .txt {
+    line-height: 20px;
+    padding: 30px;
+
+}
+
+#page .left{
+    padding-left: 10px;
+}
+
+#page .left .trustpilot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 250px;
+}
+
+#page .left .trustpilot img{
+    width: 150%;
+    height: 100%;
+}
+
+
+#page .left .articles{
+    padding-left: 10px;
+    line-height: 35px;
+}
+
+#page .left .articles a{
+    text-decoration: none;
+}
+
+
+
+footer .signIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+    background-image: url(asset/banner.jpg);
+    background-position: 1% 2%;
+    width: 100%;
+    height: 587px;
+    background-size: cover;
+}
+
+
+footer .signIn .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .signIn h2{
+    font-size: 44px;
+    margin-bottom: 20px;
+
+}
+
+footer .signIn p{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+footer .signIn .in{
+    padding-top: 20px;
+}
+
+footer .signIn input{
+    width: 547px;
+    height: 68px;
+    border-radius: 26px;
+    padding-left: 55px;
+    font-size: 17px;
+}
+
+footer .signIn button{
+    margin-left: 34px;
+    height: 60px;
+    width: 381px;
+    border-radius: 13px;
+    background-color: rgb(79, 79, 243);
+    color: white;
+    font-size: 23px;
+}
+
+footer .contacts{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    height: 800px;
+    width: 100%;
+    
+}
+
+footer .contacts h5{
+    font-size: 15px;
+    padding-bottom: 27px;
+}
+footer .contacts a{
+    text-decoration: none;
+    color: white;
+    margin-top: 18px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+footer .contacts a:hover{
+    color: #0067D3;
+}
+
+footer .contacts .upper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 44px;
+    gap:200px;
+}
+
+footer .contacts .upper div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer .contacts .lower{
+    display: flex;
+    flex-direction: row;
+    margin-top: 104px;
+    gap: 264px;
+    margin-left: 101px;
+}
+
+footer .contacts .lower div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contacts .lower .follow{
+    margin-top:-94px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: -99px;
+}
+
+footer .contacts .lower .follow a{
+    position: relative;
+    font-size: 46px;
+    margin-top: 42px;
+}
+
+footer .contacts .lower .follow .fb::after{
+    content: "";
+    position:absolute;
+    background-color: blue;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 220px;
+}
